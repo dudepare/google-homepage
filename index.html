@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Google</title>
+	<style>
+		html{
+			width: 100%; height: 100%;
+		}
+		body{
+			color: #666666;
+		}
+
+		ul {
+			float: right;
+			font-family: Arial, sans-serif;
+			font-size: .75em;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			float: left;
+		}
+
+		li a{
+			display: block;
+			padding: 8px;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		a:link{
+			color: #666;
+		}
+
+		a:hover{
+			text-decoration: underline;
+		}
+		img{
+			margin: 20px;
+		}
+
+		#content {
+			margin: auto;
+			position: absolute;
+			top: 30%; left: 0; bottom: 0; right: 0;
+			text-align: center;
+		}
+
+		#content input[type="submit"]{
+			height:36px;
+			line-height: 27px;
+			cursor: default;
+			font-family: arial,sans-serif;
+			font-size: 13px;
+			font-weight: bold;
+			margin: 11px 4px;
+			min-width: 54px;
+			padding: 0 16px;
+			text-align: center;
+			color: #757575;
+			background-color: rgb(242, 242, 242)
+			border: 1px solid #c6c6c6;
+			box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+		}
+
+		#searchbar {
+			width: 600px;
+			height: 24px;
+		}
+
+		#footer {
+			font-family: Arial, sans-serif;
+			font-size: .75em;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			background-color:rgb(242,242,242);
+			border-top-color: rgb(228, 228, 228);
+			border-top-style: solid;
+			border-top-width: 1px;
+
+		}
+
+		#footer span{
+			color: #343434;
+			font-size: 13px;
+			line-height: 40px;
+			margin-right:30px;
+		}
+
+		#footer a{
+			padding: 8px;
+			text-align: center;
+			text-decoration: none;	
+		}
+		#footer a:hover{
+			text-decoration: underline;
+		}
+		.business{
+			float: left;
+		}
+		.legal {
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<ul>
+			<li><a href="/">Andrew</a></li>
+			<li><a href="https://mail.google.com.au">Gmail</a></li>
+			<li><a href="https://www.google.com.au/imghp">Images</a></li>
+			<li><a href="/">Apps</a></li>
+			<li><a href="/">Notifications</a></li>
+			<li><a href="/">Account</a></li>
+		</ul>
+	</div>
+	<div id="content">
+		<img src="googlelogo.png">
+		<form>
+			<input id="searchbar" type="text">
+			<p>
+				<input type="submit" value="Google Search">
+				<input type="submit" value="I'm Feeling Lucky">
+			</p>
+		</form>
+	</div>
+	<div id="footer">
+		<span class="business">	
+			<a href="/">Advertising</a>
+			<a href="/">Business</a>
+			<a href="/">About</a>
+		</span>
+		<span class="legal">
+			<a href="/">Privacy</a>
+			<a href="/">Terms</a>
+			<a href="/">Settings</a>
+			<a href="/">Use Google.com</a>
+		</span>
+	</div>
+</body>
+</html>
